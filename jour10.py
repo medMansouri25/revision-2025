@@ -1,0 +1,1 @@
+#lecture fichier avce exceptions
