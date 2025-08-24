@@ -1,0 +1,46 @@
+1. Initialisation de git
+1.1.Création nouveau dépot
+-->git init 
+1.2. Initialisation de git dans un projet existant (clone)
+-->git clone <url du projet>
+
+2. Suivi des modifications et fichiers
+2.1. Ajout de fichiers
+-->git add <nom du fichier>  #joute un fichier à la zone de préparation (staging area), on utilise cette commande aprés avoir modifié ou créer fichier.
+2.2. Voir l'état des fichiers
+-->git status #Montre l’état des fichiers (modifiés, ajoutés, en attente de commit…)
+2.3. Suppression de fichiers
+-->git rm <nom du fichier> #Supprime un fichier de la zone de préparation
+
+3. Sauvegarde
+3.1. Commit
+-->git commit -m "<message de commit>" #Enregistre les modifications dans la base 
+3.2. Voir l'historique des commits
+-->git log #Montre l'historique des commits
+3.3. La différence entre les version 
+-->git diff #Montre les différences entre les versions
+
+4. Gestion des branches
+4.1. Création de branche
+-->git branch <nom de la branche> #Crée une nouvelle branche
+4.2. Passage à une branche
+-->git checkout <nom de la branche> #Passage à une branche
+4.3. Fusion de branche
+-->git merge <nom de la branche> #Fusion de deux branches
+4.4. création d'une branch et se place dessus
+-->git checkout -b <nom de la branche> #Crée une nouvelle branche et se place dessus
+4.5. Suppression de branche
+-->git branch -d <nom de la branche> #Supprime une branche
+
+5. Gestion des remotes (depot à distant)
+5.1. Ajout d'un dépôt distant
+-->git remote add <nom du dépôt> <url du dépôt> #Ajoute un dépôt distant (exemple : github  git remote add origin https://github.com/utilisateur/projet.git)
+5.2. Voir les dépôts distantsvs
+6.Envoi et récupération de données
+6.1. Envoi de données
+-->git push <nom du dépôt> <nom de la branche> #Envoi (git push origin main)
+6.2. Récupération de données
+-->git pull <nom du dépôt> <nom de la branche> 
+6.3 . Récupération de données sans fusionner
+--> git fetch
+
